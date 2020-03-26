@@ -8,9 +8,16 @@ block content
     input(type="text" id="title" name="title")
     br
     input(type="submit", value="Dodaj")
-       table
+block content
+  table
     tr
       th(scope= "col") Tytuł
     each task in tasks
       tr
         td= task.title
+
+
+
+
+  h1= title
+  p Welcome to #{title}
